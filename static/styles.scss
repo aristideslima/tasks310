@@ -1,0 +1,100 @@
+// Color Variables
+
+$primary_color: #746694;
+$primary-hover-color: #4eb44e;
+$success-color: #275f27;
+$success-hover-color: #995050;
+$title-color: #3a3131;
+$bg_color: #f5deb3;
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $bg_color;
+}
+
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    color: $primary-hover-color;
+  }
+
+  h4 {
+    color: #666;
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+
+    td {
+      padding: 10px;
+      border: 2px solid #422aad;
+    }
+    th {
+      background-color: #7cc6cf;
+      color: #975454;
+      padding: 10px;
+      border: 2px solid #422aad;
+    }
+  }
+  .fixed-link {
+    display: inline-block; /* or display: block; if you want them to take up the full available width */
+    width: 60px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    text-align: center; /* Center text horizontally */
+    line-height: 20px; /* Vertically center text (must match height) */
+    text-decoration: none; /* Remove default underline */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    margin: 5px; /* Optional: Add some margin between links */
+  }
+  a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: $primary_color;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s case;
+
+    &:hover {
+      background-color: $primary-hover-color;
+    }
+  }
+  input {
+    padding: 10px;
+    margin: 5px;
+    border: solid 1px;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    /* Selects only text input fields */
+    padding: 10px;
+    margin: 5px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    width: 300px; /* Adjust this value as needed to accommodate at least 60 characters */
+    min-width: 300px; /* Ensures the width is at least 300px */
+  }
+  #btn_add {
+    background-color: $success-color;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 20px; /* Add padding for a larger button */
+    &:hover {
+      background-color: $success-hover-color;
+    }
+  }
+}
